@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Extreme&display=swap');
+
+.work-card{
+    transition: .2s;
+    border: 1px solid lightgray;
+    width: 266px;
+    padding: 10px;
+    margin:10px;
+    border-radius: 14px;
+    font-family: 'Pathway Extreme', sans-serif;
+}
+.work-card:hover{
+    /* transform: rotate(3deg); */
+    width: 300px;
+    border: 1px solid white;
+    box-shadow: 4px 6px 16px 8px #eee;
+    border-radius: 16px;
+}
+.work-card p{
+    font-size: 14px;
+}
+
+.work-card .content {
+  display: none;
+  background-color: #233554;
+  background: transparent;
+}
+.work-card:hover .content {
+  display: block;
+}
+.work-card-img{
+    width: 100%;
+    border-radius: 14px;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 110px 0;
+}
+.work-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.work-header a{
+   color:lightgray ;
+}
+
+
+
+@media screen and (max-width: 768px){
+  .work-card .content {
+  display: block;
+}
+}
